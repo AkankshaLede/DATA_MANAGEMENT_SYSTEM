@@ -95,50 +95,5 @@ async def insert_employee_data(
         raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail=str(e))
 
 
-# URL = "http://127.0.0.1:8000"
-
-# class TestAPI(TestCase):
-#     def test_get_items(self):
-#         emp_id = 4
-#         url = f"{URL}/employee_data/{emp_id}"
-#         a = requests.get(url)
-#         self.assertEqual(a.status_code, 200)
-
-#     def test_get_items_(self):
-#         emp_id = "yeruk"
-#         url = f"{URL}/employee_data/{emp_id}"
-#         a = requests.get(url)
-#         self.assertEqual(a.status_code, 200 ,msg = "please enter proper employee_id in integer" )
-
-#     def test_post_items(self):
-#         url = f"{URL}/insertemployee"
-#         data = {
-#             "emp_id": 7,
-#             "fname": "Akanksha",
-#             "lname": "Lede",
-#             "email": "akanksha.lede@moschip.com",
-#             "dept": "backend",
-#             "salary": 29500,
-#             "hire_date": "2024-08-05"
-#         }
-#         b = requests.post(url, json = data)
-#         self.assertEqual(b.status_code, 201)
-
-#     def test_post_items(self):
-#         url = f"{URL}/insertemployee"
-#         data = {
-#             "emp_id" : 5,
-#             "fname" : "akshu",
-#             "lname" : "lede",
-#             "email" : "akshu@gmail.com",
-#             "dept" : "frontend",
-
-#         }
-#         c = requests.post(url, json = data)
-#         self.assertEqual(c.status_code, 422, msg = "Invalid data,field proper data")
-
-
-
 if __name__ == "__main__":
-    # unittest.main()
     uvicorn.run("main:app", host="195.168.1.125", port=8000, reload= True)
