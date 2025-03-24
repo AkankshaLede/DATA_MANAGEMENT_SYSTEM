@@ -9,9 +9,6 @@ import logging
 from db_helper import DBConnectionPool
 from model import Employee
 from unittest import TestCase
-# import unittest
-# import requests
-
 
 
 logger = logging.getLogger('uvicorn.error')
