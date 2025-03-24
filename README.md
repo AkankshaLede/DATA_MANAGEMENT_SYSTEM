@@ -134,9 +134,4 @@ Here are some useful Docker commands for managing the application:
 ## Environment Variables
 The project uses a `.env` file for configuration. Ensure you update it before running the application.
 
-## Contributing
-If you wish to contribute, feel free to fork the repository and create a pull request.
-
-## License
-This project is licensed under the MIT License.
 
