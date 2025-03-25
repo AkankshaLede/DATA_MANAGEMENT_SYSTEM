@@ -8,8 +8,6 @@ from psycopg.rows import dict_row
 import logging
 from db_helper import DBConnectionPool
 from model import Employee
-from unittest import TestCase
-
 
 logger = logging.getLogger('uvicorn.error')
 logger.setLevel(logging.DEBUG)
